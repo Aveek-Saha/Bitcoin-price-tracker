@@ -1,0 +1,61 @@
+{
+  "name": "crypto",
+  "email": "aveek.s98@gmail.com",
+  "productName": "Crypto",
+  "homepage": "https://aveek-saha.github.io",
+  "repository": "",
+  "version": "1.0.1",
+  "description": "An application to notify you of Bitcoin prices",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "postinstall": "install-app-deps",
+    "pack": "build --dir",
+    "dist": "build"
+},
+  "build": {
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "maintainer": "Aveek <aveek.s98@gmail.com>",
+      "icon": "build/512x512.png"
+    },
+    "win": {
+      "target": "squirrel",
+      "icon": "build/icon.ico"
+    }
+  },
+  "keywords": [],
+  "author": "Aveek Saha",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "1.8.4",
+    "electron-builder": "^20.6.2",
+    "electron-packager": "^11.1.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
