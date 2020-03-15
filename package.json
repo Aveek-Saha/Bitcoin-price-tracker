@@ -4,7 +4,7 @@
   "productName": "Crypto",
   "homepage": "https://aveek-saha.github.io",
   "repository": "",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An application to notify you of Bitcoin prices",
   "main": "main.js",
   "scripts": {
